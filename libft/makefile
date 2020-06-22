@@ -6,7 +6,7 @@
 #    By: antomart <antomart@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/21 15:08:25 by antomart          #+#    #+#              #
-#    Updated: 2020/06/16 07:47:13 by antomart         ###   ########.fr        #
+#    Updated: 2020/06/22 13:48:06 by antomart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,6 +60,26 @@ SRCS	=	ft_atoi.c \
 			ft_clear_lst.c \
 			get_next_line_bonus.c \
 			get_next_line_utils_bonus.c \
+			ft_flag_check_min.c \
+			ft_flag_check_prec.c \
+			ft_flag_check_width.c \
+			ft_flag_check_zer.c \
+			ft_flag_switch.c \
+			ft_get_atr.c \
+			ft_init_flags.c \
+			ft_print_char.c \
+			ft_printf.c \
+			ft_print_int.c \
+			ft_print_low_hex.c \
+			ft_print_nbr2.c \
+			ft_print_opt.c \
+			ft_print_perc.c \
+			ft_print_point.c \
+			ft_print_str.c \
+			ft_print_uint.c \
+			ft_print_up_hex.c \
+			ft_wr_inc_pr_thgs.c \
+
 
 SRCS_B	= 	ft_lstnew_bonus.c \
 			ft_lstadd_front_bonus.c \
