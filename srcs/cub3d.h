@@ -6,7 +6,7 @@
 /*   By: antomart <antomart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 07:54:43 by antomart          #+#    #+#             */
-/*   Updated: 2020/06/16 11:10:44 by antomart         ###   ########.fr       */
+/*   Updated: 2020/06/22 16:42:49 by antomart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,24 @@
 # include <fcntl.h>
 # include "libft.h"
 # include "mlx.h"
+
+typedef	struct	s_cub3d
+{
+	int	line_count;
+	int	map_read;
+	int h;
+	int w;
+	char *N_path;
+	char *S_path;
+	char *W_path;
+	char *E_path;
+
+}				t_val;
+
+void	get_res(char *line, t_val *ptr);
+void	get_path_n(char *line, t_val *ptr);
+void	get_path_s(char *line, t_val *ptr);
+void	get_path_w(char *line, t_val *ptr);
+void	get_path_e(char *line, t_val *ptr);
 
 #endif
