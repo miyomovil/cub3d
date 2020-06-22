@@ -1,13 +1,15 @@
 NAME 				= cub3d
 LIBFT_PATH 			= ./libft
 MINILIBX_PATH 		= ./minilibx-linux
-SRCS 				= ./srcs/main.c \
+SRCS 				= 	./srcs/read_map.c \
+						./srcs/get_res.c \
+
 
 OBJS 				= ${SRCS:.c=.o}
 INCLUDE 			= cub3d.h
 LIBFT 				= libft
 MINILIBX 			= minilibX
-CC					= gcc -g -Wall -Wextra -Werror -fsanitize=address
+CC					= gcc -g -Wall -Wextra -Werror
 RM 					= rm -f
 MLXFLAGS			= -I ./minilibx-linux -L ./minilibx-linux -lmlx -lm -lbsd -lX11 -lXext
 LIBFLAGS			= -I ./libft -L ./libft  -l ft
@@ -15,7 +17,7 @@ LIBFLAGS			= -I ./libft -L ./libft  -l ft
 all:				libft_all minilibx_all ${NAME}
 
 $(NAME):			${OBJS}
-					$(CC) ${OBJS} ${MLXFLAGS} -o cub3d
+					$(CC) ${OBJS} ${MLXFLAGS} ${LIBFLAGS} -o cub3d
 
 .c.o:
 					@$(CC) -c $< $(MLXFLAGS) -o $@
